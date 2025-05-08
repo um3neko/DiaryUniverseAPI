@@ -1,6 +1,7 @@
+using DiaryUniverse.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DiaryUniverse.Controllers;
+namespace DiaryUniverse.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]
@@ -12,10 +13,12 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(ILogger<WeatherForecastController> logger, IUnitOfWork unitOfWork)
     {
         _logger = logger;
+        _unitOfWork = unitOfWork;
     }
 
     [HttpGet(Name = "GetWeatherForecast")]

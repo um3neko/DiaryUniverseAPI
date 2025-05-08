@@ -1,6 +1,6 @@
 ﻿namespace DiaryUniverse.Infrastructure.Data.Models;
 
-public class BaseEntity
+public class Entity
 {
     public Guid Id { get; set; }
     public Guid CreatedBy { get; set; }

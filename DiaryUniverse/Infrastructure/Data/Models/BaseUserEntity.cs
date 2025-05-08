@@ -1,7 +1,7 @@
 ﻿namespace DiaryUniverse.Infrastructure.Data.Models;
 
-public class BaseUserEntity : BaseEntity
+public class BaseUserEntity : Entity
 {
-    public User User { get; set; }
+    public User? User { get; set; }
     public Guid UserId { get; set; }
 }

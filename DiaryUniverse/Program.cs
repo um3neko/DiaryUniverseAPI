@@ -1,4 +1,7 @@
+using DiaryUniverse.Application.Services;
+using DiaryUniverse.Application.Services.Interfaces;
 using DiaryUniverse.Infrastructure.Data;
+using DiaryUniverse.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace DiaryUniverse;
@@ -14,7 +17,12 @@ public class Program
         
         builder.Services.AddControllers();
         builder.Services.AddOpenApi();
-        
+        //
+        builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+        builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+        //
+        builder.Services.AddScoped<IConstellationService, ConstellationService>();
+        //
         var app = builder.Build();
         if (app.Environment.IsDevelopment())
         {
