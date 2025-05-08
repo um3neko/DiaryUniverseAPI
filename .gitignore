@@ -1,0 +1,66 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+# Build results
+bin/
+obj/
+out/
+
+# Rider & IDEA
+.idea/
+*.sln.iml
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ASP.NET secrets
+**/appsettings.Development.json
+**/appsettings.Local.json
+secrets.json
+
+# Logs
+*.log
+logs/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+*.nuspec
+.nuget/
+
+# Other system files
+.DS_Store
+Thumbs.db
+
+# Publish outputs
+publish/
+wwwroot/dist/
+wwwroot/node_modules/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Rider caches
+.idea/
+.idea/*
+
+# Temp files
+*.tmp
+*.temp
+*.bak
+
+# Local environment
+.env
+.env.*
