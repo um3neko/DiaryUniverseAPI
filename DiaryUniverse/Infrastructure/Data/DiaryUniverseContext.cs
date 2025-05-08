@@ -6,10 +6,7 @@ namespace DiaryUniverse.Infrastructure.Data;
 public class DiaryUniverseContext : DbContext
 {
     public DiaryUniverseContext(DbContextOptions<DiaryUniverseContext> options) : base(options) { }
-    public DbSet<Star> Start => Set<Star>();
-    
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        base.OnConfiguring(optionsBuilder);
-    }
+    public DbSet<Star> Stars => Set<Star>();
+    public DbSet<Constellation> Constellations => Set<Constellation>();
+
 }

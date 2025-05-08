@@ -1,4 +1,4 @@
-@DiaryUniverse_HostAddress = http://localhost:5186
+@DiaryUniverse_HostAddress = http://localhost:5001
 
 GET {{DiaryUniverse_HostAddress}}/weatherforecast/
 Accept: application/json
