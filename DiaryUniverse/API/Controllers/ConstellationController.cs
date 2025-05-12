@@ -10,10 +10,9 @@ namespace DiaryUniverse.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class ConstellationController(ILogger<WeatherForecastController> logger, IConstellationService constellationServic)
+public class ConstellationController(IConstellationService constellationServic)
     : ControllerBase
 {
-    private readonly ILogger<WeatherForecastController> _logger = logger;
     private readonly IConstellationService _service = constellationServic;
     
     [HttpGet("Get/{id}")]
