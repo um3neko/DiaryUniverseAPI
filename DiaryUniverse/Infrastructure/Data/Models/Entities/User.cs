@@ -1,6 +1,6 @@
 ﻿namespace DiaryUniverse.Infrastructure.Data.Models;
 
-public class User : BaseEntity
+public class User : Entity
 {
     public string? Name { get; set; }
     public string? Email { get; set; }

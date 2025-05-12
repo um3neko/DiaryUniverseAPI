@@ -28,11 +28,8 @@
 
     <ItemGroup>
       <Folder Include="API\" />
-      <Folder Include="Application\" />
       <Folder Include="Domain\" />
-      <Folder Include="Infrastructure\Configurations\" />
       <Folder Include="Infrastructure\Data\Migrations\" />
-      <Folder Include="Infrastructure\Repositories\" />
     </ItemGroup>
 
 </Project>
